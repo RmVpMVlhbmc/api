@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "author": "Fei Yang <projects@feiyang.moe>",
+  "description": "Collection of APIs.",
+  "license": "AGPL-3.0-only",
+  "main": "src/index.js",
+  "name": "api",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.2.0",
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "start": "node ."
+  },
+  "dependencies": {
+    "@tinyhttp/app": "^2.0.20",
+    "@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.5",
+    "esbuild": "^0.14.32",
+    "milliparsec": "^2.2.1"
+  }
+}
