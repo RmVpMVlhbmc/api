@@ -1,3 +1,5 @@
+import fetch from 'node-fetch'
+
 /**
  * @param  {String} url Request URL
  * @param  {Object} init Request metadata

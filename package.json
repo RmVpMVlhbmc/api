@@ -16,6 +16,7 @@
     "@tinyhttp/app": "^2.0.20",
     "@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.5",
     "esbuild": "^0.14.32",
-    "milliparsec": "^2.2.1"
+    "milliparsec": "^2.2.1",
+    "node-fetch": "^3.2.4"
   }
 }
