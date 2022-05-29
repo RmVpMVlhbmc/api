@@ -165,7 +165,7 @@ __metadata:
     "@tinyhttp/app": ^2.0.20
     "@yarnpkg/esbuild-plugin-pnp": ^3.0.0-rc.5
     esbuild: ^0.14.32
-    milliparsec: ^2.2.1
+    milliparsec: 2.2.1
     node-fetch: ^3.2.4
   languageName: unknown
   linkType: soft
@@ -458,10 +458,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"milliparsec@npm:^2.2.1":
+"milliparsec@npm:2.2.1":
   version: 2.2.1
   resolution: "milliparsec@npm:2.2.1"
   checksum: 384406b730ffe8628fe01ff5adb9af23f8fb02e61a11c8274879064de19796da658d38e675cff8f47b626474b02c0cf5246683e027015c9b7ef311133d500c20
+  languageName: node
+  linkType: hard
+
+"milliparsec@patch:milliparsec@npm:2.2.1#.yarn/patches/milliparsec-npm-2.2.1-eee4657c22.patch::locator=api%40workspace%3A.":
+  version: 2.2.1
+  resolution: "milliparsec@patch:milliparsec@npm%3A2.2.1#.yarn/patches/milliparsec-npm-2.2.1-eee4657c22.patch::version=2.2.1&hash=3b525b&locator=api%40workspace%3A."
+  checksum: 91a1499f5aa67629ee905eebf51f1223df6b583fb2a18ecf476e8baa3f4f1b3ac3145875d06e488056e8ca767ccf2af1a50ab0f2651f3b2420ed01b2ba2ad9f7
   languageName: node
   linkType: hard
 

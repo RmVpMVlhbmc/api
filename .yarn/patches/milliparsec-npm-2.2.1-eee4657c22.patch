@@ -1,0 +1,25 @@
+diff --git a/dist/index.js b/dist/index.js
+index b6d90d0b636ff48544febc48c0cf865ed42b6f1d..987d1946db8ceb0ee899505267e9fe2ae6feec37 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -25,14 +25,18 @@ const json = () => async (req, res, next) => {
+         next();
+ };
+ const raw = () => async (req, _res, next) => {
+-    if (hasBody(req.method))
++    if (hasBody(req.method)) {
+         req.body = await p((x) => x)(req, _res, next);
++        next();
++    }
+     else
+         next();
+ };
+ const text = () => async (req, _res, next) => {
+-    if (hasBody(req.method))
++    if (hasBody(req.method)) {
+         req.body = await p((x) => x.toString())(req, _res, next);
++        next();
++    }
+     else
+         next();
+ };

@@ -1,5 +1,5 @@
 import { App } from '@tinyhttp/app'
-import { raw } from '../.yarn/patches/milliparsec-2.2.1.js'
+import { raw } from 'milliparsec'
 
 import { index } from './routes/index/index.js'
 import { dump } from './routes/dump/index.js'
